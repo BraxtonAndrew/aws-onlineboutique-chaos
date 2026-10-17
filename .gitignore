@@ -1,0 +1,10 @@
+# Kubernetes credentials
+kubeconfig
+*.kubeconfig
+.kube/
+
+# Terraform state and caches
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
