@@ -1,0 +1,12 @@
+# Managed control planes (like EKS) don't expose these components,
+# and kind binds them to localhost - disable scraping to avoid false alerts.
+kubeEtcd:
+  enabled: false
+kubeScheduler:
+  enabled: false
+kubeControllerManager:
+  enabled: false
+
+prometheus:
+  prometheusSpec:
+    retention: 2d
