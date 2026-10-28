@@ -1,0 +1,6 @@
+chaosDaemon:
+  runtime: containerd
+  socketPath: /run/containerd/containerd.sock
+
+controllerManager:
+  enableFilterNamespace: true
